@@ -10,6 +10,7 @@ html {
 }
 
 .container__main {
+    position: relative;
     display: flex;
     width: 80%;
 }
@@ -23,8 +24,8 @@ html {
 .container__main-logo {
     display: flex;
     width: 35%;
-    justify-content: center;
     margin: 52px;
+    margin-left: 145px;
 }
 
 .container__main-center {
@@ -32,9 +33,24 @@ html {
     width: 65%;
 }
 
-img {
+.slogan {
     display: flex;
-    background-size: cover;
+    position: absolute;
+    margin-top: 504px;
+    margin-left: 145px;
+    font-family: ;
+    font-size: xx-large;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 70px;
+    color: #415167;
+}
+
+#point {
+    background-color: rgb(195, 146, 85);
+    color: #EDF0F5;
 }
 
 .sidebar {
