@@ -62,7 +62,8 @@ html {
     background-color: #415167;
 }
 
-.menu {
+.menu,
+a {
     display: flex;
     flex-direction: column;
     font-family: 'Nunito', sans-serif;
