@@ -98,7 +98,7 @@ a {
 }
 
 .about {
-    display: flex;
+    display: inline-flex;
     width: 100%;
     justify-content: space-around;
     margin-top: 80px;
@@ -114,7 +114,7 @@ a {
 
 .about-item img {
     width: 80px;
-    margin: 20px;
+
 }
 
 .about-item-header {
@@ -149,7 +149,6 @@ p {
     width: 560px;
     height: 256px;
     margin-bottom: 32px;
-
 }
 
 .item-1 {
@@ -177,6 +176,6 @@ p {
 }
 
 .button {
-    display: flex;
+    display: inline-flex;
     gap: 29px;
 }
