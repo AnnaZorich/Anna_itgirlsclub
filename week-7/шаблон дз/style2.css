@@ -1,0 +1,156 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 15% 60% 1fr;
+    grid-template-columns: 70% 1fr;
+    gap: 10px;
+}
+
+.header {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    background-color: grey;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: rgb(247, 214, 153);
+    display: grid;
+    grid-template-rows: 50% 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main div {
+    display: grid;
+    justify-content: center;
+}
+
+.main__content {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.more1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: orange;
+    align-items: center;
+}
+
+.more2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: orange;
+    align-items: center;
+}
+
+.more3 {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-color: orange;
+    align-items: center;
+}
+
+.aside {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgb(128, 185, 128);
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-color: rgb(179, 178, 178);
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 80px;
+    margin: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .aside {
+        display: none;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-rows: 15% 60% 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .aside {
+        display: none;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-rows: 15% 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-rows: 50% 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .main__content {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .more1 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background-color: orange;
+        align-items: center;
+    }
+
+    .more2 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        background-color: orange;
+        align-items: center;
+    }
+
+    .more3 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        background-color: orange;
+        align-items: center;
+    }
+
+    .footer {
+        display: none;
+    }
+
+
+
+}
