@@ -1,0 +1,176 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+.button {
+    border: 0;
+    border-radius: 40px;
+    background-color: #F5DF68;
+    padding: 10px 40px;
+}
+
+.button.button--large {
+    padding: 15px 50px;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.navigation__column {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.navigation__column:nth-child(2) {
+    justify-content: flex-end;
+}
+
+.navigation__logo {
+    margin-top: -10px;
+}
+
+.navigation .tel {
+    justify-self: end;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tel img,
+.menu {
+    min-width: 26px;
+    min-height: 26px;
+    max-width: 26px;
+    max-height: 26px;
+}
+
+.tel,
+button {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.order button {
+    width: 164px;
+    height: 40px;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+.hero__image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero__image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.hero__text-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.slogan {
+    font-weight: 700;
+    font-size: 52px;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 700px;
+    margin-top: 80px;
+}
+
+.slogan-text {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 120px;
+    color: #FFFFFF;
+    max-width: 700px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .links,
+    .tel,
+    .navigation__order-button {
+        display: none;
+    }
+
+    .hero__image-container img {
+        object-position: 78% top;
+    }
+
+    .hero__text-container {
+        justify-content: flex-end;
+        padding-bottom: 70px;
+    }
+
+    .slogan {
+        font-size: 26px;
+    }
+
+    .slogan-text {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+
+}
