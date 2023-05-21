@@ -95,7 +95,7 @@ p {
 .footer {
     display: flex;
     align-items: center;
-    gap: 130px;
+    gap: 80px;
     padding-top: 86px;
     padding-bottom: 80px;
     box-sizing: border-box;
