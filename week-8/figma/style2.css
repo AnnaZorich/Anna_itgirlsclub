@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Intro";
+    src: url(./assets/intro/intro.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.container {
+    padding: 20px 70px 0px 126px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo button {
+    font-family: Intro;
+    Width: 115px;
+    Height: 38px;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+h1 {
+    font-family: 'Intro';
+    font-size: 60px;
+    line-height: 120%;
+}
+
+h2 {
+    font-family: 'Intro';
+    font-size: 30px;
+    line-height: 120%;
+}
+
+p {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.content__cards {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card-red {
+    background-color: #EC615B;
+    color: white;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #5222D0;
+    color: white;
+    border-radius: 100px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social input {
+    width: 323px;
+    height: 50px;
+}
+
+.social button {
+    width: 135px;
+    height: 38px;
+    font-family: 'Intro';
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    padding-top: 86px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}

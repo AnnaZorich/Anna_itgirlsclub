@@ -1,0 +1,10 @@
+.header,
+.footer {
+    background-color: rgb(42, 41, 41);
+    color: white
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
